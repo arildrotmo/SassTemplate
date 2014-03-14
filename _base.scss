@@ -1,0 +1,26 @@
+*, *:after, *:before {
+	@include box-sizing(border-box);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $main-font-size;
+	line-height: $main-line-height;
+	background: $bg-color;
+	color: $main-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover, &:focus {
+  	color: $link-hover;
+  }
+  &:visited {
+  	color: $link-visited;
+  }
+}

@@ -1,0 +1,17 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$main-color: $black;
+$second-color: orange;
+$tertiary-color: blue;
+
+$bg-color: $white;
+
+$link-color: blue;
+$link-hover: darken($link-color, 10);
+$link-visited: $link-hover;
+
+$success-color: #5CB85C;
+$info-color: #5BC0DE;
+$warning-color: #F0AD4E;
+$error-color: #D9534F;
