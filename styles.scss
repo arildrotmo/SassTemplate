@@ -25,7 +25,4 @@
 
 // Debug
 $debugMode: false;
-
-// @if $debugMode == true {
-// 	@import "base/_debug.scss";
-// }
+@import "helpers/debug";
