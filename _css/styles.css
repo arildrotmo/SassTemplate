@@ -365,7 +365,7 @@ html, body {
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 100%;
   line-height: 1.5rem;
   background: white;
@@ -415,37 +415,6 @@ ul li {
   padding: 5px 0 0 0;
 }
 
-/* Menu-lists */
 .vertical > li {
   display: block;
-}
-
-header {
-  width: 100%;
-  padding-left: 1%;
-  height: 40px;
-  line-height: 40px;
-  border-bottom: 2px solid #00f;
-}
-
-main {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.filters {
-  float: left;
-  width: 14%;
-  margin-left: 1%;
-}
-
-.content {
-  float: left;
-  width: 60%;
-}
-
-.rankings {
-  float: right;
-  width: 24%;
-  margin: 0 0 10px 1%;
 }
