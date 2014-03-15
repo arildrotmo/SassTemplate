@@ -361,7 +361,7 @@ html, body {
 
 body {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5rem;
   background: white;
   color: black;
@@ -376,6 +376,41 @@ a:hover, a:focus {
 }
 a:visited {
   color: #0000cc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 11.2px;
+  font-size: 0.7rem;
 }
 
 ul {
