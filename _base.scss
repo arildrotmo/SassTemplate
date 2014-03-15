@@ -33,12 +33,7 @@ a {
   &:visited {
   	color: $link-visited;
   }
+  &:active, &[aria-pressed] {
+    color: $link-visited;
+  }
 }
-
-// TODO
-// Image replacement
-// %ir {
-// color: transparent;
-// font: 0/0 a;
-// text-shadow: none;
-// }
