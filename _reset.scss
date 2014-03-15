@@ -1,5 +1,23 @@
 // Reset based on normalize and H5BP
 
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+html, body {
+  height: 100%;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -7,6 +25,11 @@ html {
 
 body {
   margin: 0;
+  font-family: $main-font;
+  font-size: 100% * ($main-font-size / 16px);
+  line-height: $main-line-height;
+  background: $bg-color;
+  color: $main-color;
 }
 
 article,
@@ -61,12 +84,22 @@ template {
 
 a {
   background: transparent;
+  color: $link-color;
+  text-decoration: none;
+  &:active, &:hover {
+    outline: 0;
+  }
+  &:hover, &:focus {
+    color: $link-hover;
+  }
+  &:visited {
+    color: $link-visited;
+  }
+  &:active, &[aria-pressed] {
+    color: $link-visited;
+  }
 }
 
-a:active,
-a:hover {
-  outline: 0;
-}
 
 abbr[title] {
   border-bottom: 1px dotted;
