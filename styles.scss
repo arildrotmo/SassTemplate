@@ -15,6 +15,7 @@
 
 // Mixins
 @import "mixins/mixins";
+@import "mixins/shapes";
 
 // Helpers
 @import "helpers/classes";
@@ -37,3 +38,9 @@ $debugMode: false;
 
 // Print
 @import "print";
+
+
+// Testing
+div {
+	@include triangle("up", 200px, #f00);
+}
