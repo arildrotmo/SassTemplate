@@ -8,3 +8,4 @@ My Sass Template. Only just started, so very incomplete!
 - [normalize.css](https://github.com/necolas/normalize.css)
 - [Stuart Robsons Sassification](https://github.com/sturobson/Sassifaction)
 - [CSS-Tricks](http://www.css-tricks-com)
+- [Hugo Giraudel](http://hugogiraudel.com/)
