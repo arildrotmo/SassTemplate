@@ -14,7 +14,8 @@
   text-shadow: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -94,20 +95,22 @@ a {
   background: transparent;
   color: $link-color;
   text-decoration: none;
-  &:active, &:hover {
+  &:active,
+  &:hover {
     outline: 0;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $link-hover;
   }
   &:visited {
     color: $link-visited;
   }
-  &:active, &[aria-pressed] {
+  &:active,
+  &[aria-pressed] {
     color: $link-visited;
   }
 }
-
 
 abbr[title] {
   border-bottom: 1px dotted;
