@@ -1,0 +1,12 @@
+@mixin box-model($width, $padTop, $padRight, $padBottom, $padLeft) {
+	width: $width;
+	@if($padRight == $padLeft and $padTop == $padBottom) {
+	  padding: $padTop $padRight;
+	}
+	@else {
+	  padding: $padTop $padRight $padBottom $padLeft;
+	}
+	.lt-ie8 & {
+	  width: $width - $padRight - $padLeft;
+	}
+}
