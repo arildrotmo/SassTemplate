@@ -18,6 +18,7 @@
 	}
 }
 
+
 //
 // -------------------------------------------
 //  Image replacement
@@ -34,94 +35,6 @@
     display: inline-block;
     font-size: 0;
     line-height: 0;
-  }
-}
-
-
-//
-//--------------------------------------------------
-//	nth-child support for < IE9
-//	Usage example : li#{nth-child(5)} {color: red;}
-//--------------------------------------------------
-//
-
-@function nth-child($n) {
-  $nth-child: first-child;
-  @for $i from 2 through $n {
-    $nth-child: append($nth-child, #{"+ *"});
-  }
-  @return #{":"}$nth-child;
-}
-
-
-
-//
-//---------------------------------------------------
-//	Strip the unit from a number
-//---------------------------------------------------
-//
-
-@function parseInt($value) {
-
-    @return $value / ($value * 0 + 1);
-}
-
-
-
-//
-//---------------------------------------------------
-//  Convert unit
-//---------------------------------------------------
-//
-
-@function convertUnit($from, $to) {
-  $fromValue: parseInt($from);
-  $fromUnit: unit($from);
-  
-  // Convert to px first :
-  $px: 1;
-  @if($fromUnit != px) {
-    @if($fromUnit == rem or $fromUnit == em) {
-      $px: $fromValue * parseInt($main-font-size);
-    }
-    @else if($fromUnit == in) {
-      $px: $fromValue * 96;
-    }
-    @else if($fromUnit == cm) {
-      $px: $fromValue * 37.8;
-    }
-    @else if($fromUnit == mm) {
-      $px: $fromValue * 3.78;
-    }
-    @else if($fromUnit == pt) {
-      $px: $fromValue * 96 / 72;
-    }
-    @else if($fromUnit == pc) {
-      $px: $fromValue * 96 / 72 * 12;
-    }
-  }
-  @else {
-    $px: $fromValue;
-  }
-
-  // Convert from px to desired unit :
-  @if($to == rem or $to == em) {
-    @return $px / parseInt($main-font-size)+$to;
-  }
-  @else if($to == in) {
-    @return $px / 96+in;
-  }
-  @else if($to == cm) {
-    @return $px / 37.8+cm;
-  }
-  @else if($to == mm) {
-    @return $px / 3.78+mm;
-  }
-  @else if($to == pt) {
-    @return $px / 96 * 72+pt;
-  }
-  @else if($to == pc) {
-    @return $px / 96 * 72 / 12+pc;
   }
 }
 
