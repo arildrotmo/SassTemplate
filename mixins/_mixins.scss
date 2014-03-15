@@ -18,6 +18,24 @@
 	}
 }
 
+//
+// -------------------------------------------
+//  Image replacement
+// -------------------------------------------
+//
+@mixin ir($height, $width, $image) {
+  height: $height;
+  width: $width;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  &:before {
+    content: url($image);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+  }
+}
 
 
 //
