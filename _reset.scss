@@ -47,6 +47,14 @@ summary {
   display: block;
 }
 
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+}
+
 audio,
 canvas,
 progress,

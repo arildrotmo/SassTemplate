@@ -9,3 +9,4 @@ My Sass Template. Only just started, so very incomplete!
 - [Stuart Robsons Sassification](https://github.com/sturobson/Sassifaction)
 - [CSS-Tricks](http://www.css-tricks-com)
 - [Hugo Giraudel](http://hugogiraudel.com/)
+- [Fluidity](https://github.com/mrmrs/fluidity)
