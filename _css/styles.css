@@ -355,6 +355,28 @@ textarea {
     page-break-after: avoid;
   }
 }
+/*
+--------------------------------------------------
+	Adjust width and padding for <IE8, since
+	we're using box-sizing: border-box
+--------------------------------------------------
+*/
+/*
+--------------------------------------------------
+	nth-child support for < IE9
+	Usage example : linth-child(5) {color: red;}
+--------------------------------------------------
+*/
+/*
+---------------------------------------------------
+	Strip the unit from a number
+---------------------------------------------------
+*/
+/*
+---------------------------------------------------
+	rem, with px fallback for < IE9
+---------------------------------------------------
+*/
 *, *:after, *:before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -366,7 +388,7 @@ html, body {
 
 body {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 100%;
+  font-size: 16px;
   line-height: 1.5rem;
   background: white;
   color: black;
@@ -417,4 +439,12 @@ ul li {
 
 .vertical > li {
   display: block;
+}
+
+div {
+  background-color: yellow;
+  height: 32px;
+  height: 2rem;
+  width: 640px;
+  width: 40rem;
 }

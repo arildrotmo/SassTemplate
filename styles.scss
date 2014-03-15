@@ -30,3 +30,11 @@
 // Debug
 $debugMode: false;
 @import "helpers/debug";
+
+
+// Testing
+div {
+	background-color: yellow;
+	@include remfb(height, 2rem);
+	@include remfb(width, 40rem);
+}
