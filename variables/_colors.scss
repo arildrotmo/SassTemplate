@@ -1,14 +1,40 @@
-$main-color: black;
-$second-color: orange;
-$tertiary-color: blue;
+// Cool
 
-$bg-color: white;
+$aqua: #7FDBFF;
+$blue: #0074D9;
+$navy: #001F3F;
+$teal: #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime: #01FF70;
 
-$link-color: blue;
+// Warm
+
+$yellow: #FFDC00;
+$orange: #FF851B;
+$red: #FF4136;
+$fuchsia: #F012BE;
+$purple: #B10DC9;
+$maroon: #85144B;
+
+// Gray Scale
+
+$white: #fff;
+$silver: #ddd;
+$gray: #aaa;
+$black: #111;
+
+$main-color: $black;
+$second-color: $orange;
+$tertiary-color: $blue;
+
+$bg-color: $white;
+
+$link-color: $blue;
 $link-hover: darken($link-color, 10);
 $link-visited: $link-hover;
 
-$success-color: #5CB85C;
-$info-color: #5BC0DE;
-$warning-color: #F0AD4E;
-$error-color: #D9534F;
+$success-color: darken($green, 10);
+$info-color: darken($blue, 10);
+$warning-color: darken($orange, 10);
+$error-color: darken($red, 10);

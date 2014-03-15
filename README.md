@@ -10,3 +10,4 @@ My Sass Template. Only just started, so very incomplete!
 - [CSS-Tricks](http://www.css-tricks-com)
 - [Hugo Giraudel](http://hugogiraudel.com/)
 - [Fluidity](https://github.com/mrmrs/fluidity)
+- [clrs.cc](https://github.com/mrmrs/colors)
