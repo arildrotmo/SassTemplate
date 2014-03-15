@@ -1,9 +1,9 @@
-/*
---------------------------------------------------
-	Adjust width and padding for <IE8, since
-	we're using box-sizing: border-box
---------------------------------------------------
-*/
+//
+// --------------------------------------------------
+//	Adjust width and padding for <IE8, since
+//	we're using box-sizing: border-box
+// --------------------------------------------------
+//
 
 @mixin box-model($width, $padTop, $padRight, $padBottom, $padLeft) {
 	width: $width;
@@ -20,12 +20,12 @@
 
 
 
-/*
---------------------------------------------------
-	nth-child support for < IE9
-	Usage example : li#{nth-child(5)} {color: red;}
---------------------------------------------------
-*/
+//
+//--------------------------------------------------
+//	nth-child support for < IE9
+//	Usage example : li#{nth-child(5)} {color: red;}
+//--------------------------------------------------
+//
 
 @function nth-child($n) {
   $nth-child: first-child;
@@ -37,11 +37,12 @@
 
 
 
-/*
----------------------------------------------------
-	Strip the unit from a number
----------------------------------------------------
-*/
+//
+//---------------------------------------------------
+//	Strip the unit from a number
+//---------------------------------------------------
+//
+
 @function parseInt($value) {
 
     @return $value / ($value * 0 + 1);
@@ -49,11 +50,11 @@
 
 
 
-/*
----------------------------------------------------
-	rem, with px fallback for < IE9
----------------------------------------------------
-*/
+//
+//---------------------------------------------------
+//	rem, with px fallback for < IE9
+//---------------------------------------------------
+//
 
 @mixin remfb($property, $sizes) {
   $rems: ();
