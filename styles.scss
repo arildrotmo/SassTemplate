@@ -6,8 +6,7 @@
 //  email : arotmo@gmail.com
 // --------------------------------------------
 
-@import "vendor/normalize";
-@import "vendor/h5bp";
+@import "reset";
 
 // Variables
 @import "variables/colors";
@@ -16,6 +15,9 @@
 
 // Mixins
 @import "mixins/mixins";
+
+// Helpers
+@import "helpers/classes";
 
 // Base styles
 @import "base";
@@ -33,10 +35,5 @@
 $debugMode: false;
 @import "helpers/debug";
 
-
-// Testing
-div {
-	background-color: yellow;
-	@include remfb(height, 2rem);
-	@include remfb(width, 40rem);
-}
+// Print
+@import "print";

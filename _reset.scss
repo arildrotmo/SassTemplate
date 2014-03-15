@@ -1,7 +1,10 @@
+// Reset based on normalize and H5BP
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
@@ -32,6 +35,23 @@ video {
 audio:not([controls]) {
   display: none;
   height: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
 }
 
 [hidden],
@@ -84,24 +104,6 @@ sup {
 
 sub {
   bottom: -0.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
 }
 
 pre {
@@ -181,19 +183,20 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 legend {
   border: 0;
   padding: 0;
-}
-
-textarea {
-  overflow: auto;
 }
 
 optgroup {
@@ -207,5 +210,14 @@ table {
 
 td,
 th {
+  padding: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
   padding: 0;
 }

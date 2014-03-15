@@ -2,6 +2,16 @@
 	box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
 html, body {
 	height: 100%;
 }
