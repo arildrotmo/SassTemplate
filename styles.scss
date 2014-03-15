@@ -7,7 +7,6 @@
 // --------------------------------------------
 
 
-
 // Variables
 @import "variables/colors";
 @import "variables/typography";
@@ -35,7 +34,6 @@
 // IE
 @import "ie/ie";
 
-
 // Debug
 $debugMode: false;
 @import "helpers/debug";
@@ -48,4 +46,3 @@ $debugMode: false;
 //
 // Make docs, with classnames, mixins and functions
 // Add stuff from effeckt.css
-

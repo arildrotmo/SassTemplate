@@ -5,6 +5,7 @@
   padding: 0.2em 0;
 }
 
+
 //
 // Hide from both screenreaders and browsers: h5bp.com/u
 //
@@ -13,6 +14,7 @@
   display: none !important;
   visibility: hidden;
 }
+
 
 //
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -28,10 +30,12 @@
   position: absolute;
   width: 1px;
 
+
   //
   // Extends the .visuallyhidden class to allow the element to be focusable
   // when navigated to via the keyboard: h5bp.com/p
   //
+
   &.focusable:active,
   &.focusable:focus {
     clip: auto;
@@ -52,6 +56,11 @@
   visibility: hidden;
 }
 
+
+//
+// Clearfix
+//
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -61,6 +70,7 @@
 .clearfix:after {
   clear: both;
 }
+
 
 //
 // Wrap tables or pre elements in a div with this class
