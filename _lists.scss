@@ -5,9 +5,11 @@ ul {
 		list-style: none;
 	}
 }
+
 .horizontal li {
 	display: inline-block;
 }
+
 .hasChildren {
 	position: relative;
 	.menuChild {
@@ -29,7 +31,6 @@ ul {
 		}
 	}
 }
-
 
 .vertical {
 	> li {

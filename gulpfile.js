@@ -5,7 +5,6 @@ var gulp = require('gulp');
 // Load plugins
 var $ = require('gulp-load-plugins')();
 
-
 // Styles
 gulp.task('styles', function () {
     return gulp.src('styles.scss')
@@ -13,7 +12,10 @@ gulp.task('styles', function () {
           style: 'expanded'
         }))
         .pipe($.autoprefixer('last 1 version'))
-        .pipe(gulp.dest('_css'))
+        // .pipe($.uncss({
+        //     html: ['index.html']
+        // }))
+        .pipe(gulp.dest('_css'));
 });
 
 
