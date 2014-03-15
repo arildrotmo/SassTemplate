@@ -19,9 +19,11 @@
 
 // Base styles
 @import "base";
-@import "lists";
 @import "layout";
 
+// Elements
+@import "elements/lists";
+@import "elements/headings";
 
 // IE
 @import "ie/ie";
