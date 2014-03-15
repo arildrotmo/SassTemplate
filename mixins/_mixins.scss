@@ -1,3 +1,10 @@
+/*
+--------------------------------------------------
+	Adjust width and padding for <IE8, since
+	we're using box-sizing: border-box
+--------------------------------------------------
+*/
+
 @mixin box-model($width, $padTop, $padRight, $padBottom, $padLeft) {
 	width: $width;
 	@if($padRight == $padLeft and $padTop == $padBottom) {
@@ -9,4 +16,19 @@
 	.lt-ie8 & {
 	  width: $width - $padRight - $padLeft;
 	}
+}
+
+/*
+--------------------------------------------------
+	nth-child support for < IE9
+	Usage example : li#{nth-child(5)} {color: red;}
+--------------------------------------------------
+*/
+
+@function nth-child($n) {
+  $nth-child: first-child;
+  @for $i from 2 through $n {
+    $nth-child: append($nth-child, #{"+ *"});
+  }
+  @return #{":"}$nth-child;
 }
