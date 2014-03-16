@@ -24,8 +24,8 @@
 @import "helpers/classes";
 
 // Base styles
-@import "reset";
-@import "layout";
+@import "base/reset";
+@import "base/layout";
 
 // Elements
 @import "elements/headings";
@@ -39,7 +39,7 @@ $debugMode: false;
 @import "helpers/debug";
 
 // Print
-@import "print";
+@import "print/print";
 
 
 // TODO
