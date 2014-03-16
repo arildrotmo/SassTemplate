@@ -1,0 +1,16 @@
+@import "mixins/alerts";
+
+// Define alert-types and call the mixin to make classes
+
+$alert-types: (
+  error   :  $error-color,
+  valid   :  $success-color,
+  warning :  $warning-color,
+  info    :  $info-color
+) !default;
+
+@each $type, $color in $alert-types {
+  .alert-#{$type} {
+    @include alert($color);
+  }
+}

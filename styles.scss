@@ -18,7 +18,6 @@
 // Mixins
 @import "mixins/mixins";
 @import "mixins/shapes";
-@import "mixins/alerts";
 
 // Helpers
 @import "helpers/classes";
@@ -30,6 +29,9 @@
 // Elements
 @import "elements/headings";
 @import "elements/lists";
+
+// Components
+@import "components/alerts";
 
 // IE
 @import "ie/ie";
