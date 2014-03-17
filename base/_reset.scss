@@ -28,7 +28,7 @@ body {
   margin: 0;
   font-family: $main-font;
   font-size: 100% * ($main-font-size / 16px);
-  line-height: $main-line-height;
+  @include remfb(line-height, $main-line-height);
   background: $bg-color;
   color: $main-color;
 }
