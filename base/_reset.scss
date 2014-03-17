@@ -95,20 +95,29 @@ a {
   background: transparent;
   color: $link-color;
   text-decoration: none;
+  h1 & {
+    color: inherit;
+  }
   &:active,
   &:hover {
     outline: 0;
   }
-  &:hover,
-  &:focus {
-    color: $link-hover;
-  }
   &:visited {
     color: $link-visited;
+    h1 & {
+      color: inherit;
+    }
   }
   &:active,
   &[aria-pressed] {
     color: $link-visited;
+    h1 & {
+      color: inherit;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover;
   }
 }
 
