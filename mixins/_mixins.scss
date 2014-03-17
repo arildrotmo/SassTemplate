@@ -46,7 +46,7 @@
 //---------------------------------------------------
 //
 
-@mixin remfb($property, $sizes) {
+@mixin remfb($properties, $sizes) {
   $rems: ();
   $pxs: ();
   
@@ -57,8 +57,11 @@
     @if($unit == 'rem') {
       $pxs: join($pxs, #{$size*parseInt($main-font-size)}px);
       $rems: join($rems, #{$size}rem);
-      #{$property}: $pxs;
-      #{$property}: $rems;
+
+      @for $j from 1 through length($properties) {
+        #{nth($properties, $j)}: $pxs;
+        #{nth($properties, $j)}: $rems;
+      }
     }
     @else {
       @if($unit != 'px') {
@@ -66,8 +69,10 @@
       }
       $pxs: join($pxs, #{$size}px);
       $rems: join($rems, #{$size/parseInt($main-font-size)}rem);
-      #{$property}: $pxs;
-      #{$property}: $rems;
+      @for $j from 1 through length($properties) {
+        #{nth($properties, $j)}: $pxs;
+        #{nth($properties, $j)}: $rems;
+      }
     }
   }
 }
