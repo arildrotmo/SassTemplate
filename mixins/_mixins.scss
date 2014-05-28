@@ -53,27 +53,26 @@
   @for $i from 1 through length($sizes) {
     $size: parseInt(nth($sizes, $i));
     $unit: unit(nth($sizes, $i));
-    
-    @if($unit == 'rem') {
-      $pxs: join($pxs, #{$size*parseInt($main-font-size)}px);
-      $rems: join($rems, #{$size}rem);
 
-      @for $j from 1 through length($properties) {
-        #{nth($properties, $j)}: $pxs;
-        #{nth($properties, $j)}: $rems;
-      }
+    @if($size == 0) {
+      $pxs: join($pxs, 0);
+      $rems: join($rems, 0);
     }
     @else {
-      @if($unit != 'px') {
-        @warn "Assuming #{$property} to be in pixels";
+      @if($unit == 'rem') {
+        $pxs: join($pxs, #{$size*parseInt($main-font-size)}px);
+        $rems: join($rems, #{$size}rem);
       }
-      $pxs: join($pxs, #{$size}px);
-      $rems: join($rems, #{$size/parseInt($main-font-size)}rem);
-      @for $j from 1 through length($properties) {
-        #{nth($properties, $j)}: $pxs;
-        #{nth($properties, $j)}: $rems;
+      @else {
+        $pxs: join($pxs, #{$size}px);
+        $rems: join($rems, #{$size/parseInt($main-font-size)}rem);
       }
     }
+  }
+
+  @for $j from 1 through length($properties) {
+    #{nth($properties, $j)}: $pxs;
+    #{nth($properties, $j)}: $rems;
   }
 }
 
