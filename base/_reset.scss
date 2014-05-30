@@ -84,7 +84,7 @@ svg:not(:root) {
 }
 
 figure {
-  margin: 1em 40px;
+  @include remfb(1rem 40px);
 }
 
 [hidden],
@@ -122,6 +122,10 @@ a {
   }
 }
 
+li {
+  text-align: inherit;
+}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -153,11 +157,11 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+  @include remfb(top, -0.5rem);
 }
 
 sub {
-  bottom: -0.25em;
+  @include remfb(bottom, -0.25rem);
 }
 
 pre {
@@ -272,6 +276,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  @include remfb(margin, 1rem 0);
   padding: 0;
 }
