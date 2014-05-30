@@ -5,12 +5,12 @@
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background-color: #b3d4fc;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background-color: #b3d4fc;
   text-shadow: none;
 }
 
@@ -30,7 +30,7 @@ body {
   font-family: $main-font;
   font-size: 100% * ($main-font-size / 16px);
   @include remfb(line-height, $main-line-height);
-  background: $bg-color;
+  background-color: $bg-color;
   color: $main-color;
 }
 
@@ -93,7 +93,7 @@ template {
 }
 
 a {
-  background: transparent;
+  background-color: transparent;
   color: $link-color;
   text-decoration: none;
   h1 & {
@@ -140,7 +140,7 @@ dfn {
 }
 
 mark {
-  background: #ff0;
+  background-color: #ff0;
   color: #000;
 }
 
