@@ -98,3 +98,56 @@
     }
   }
 }
+
+
+//
+//---------------------------------------------------
+//  Make element as big as its container
+//---------------------------------------------------
+//
+
+@mixin coverContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//
+//---------------------------------------------------
+//  Center element vertically and horizontally
+//---------------------------------------------------
+//
+
+@mixin centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//
+//---------------------------------------------------
+//  Word-wrap
+//---------------------------------------------------
+//
+
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+//
+//---------------------------------------------------
+//  Add ellipsis (...) to overflowing text
+//---------------------------------------------------
+//
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
