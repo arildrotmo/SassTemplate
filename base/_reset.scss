@@ -1,7 +1,10 @@
 // Reset based on normalize and H5BP
 
-*, *:after, *:before {
+html {
   box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
 }
 
 ::-moz-selection {
