@@ -21,7 +21,6 @@
 //
 
 @function parseInt($value) {
-
     @return $value / ($value * 0 + 1);
 }
 
