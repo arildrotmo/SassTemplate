@@ -87,7 +87,7 @@ svg:not(:root) {
 }
 
 figure {
-  @include remfb(1rem 40px);
+  @include remfb(margin, 1rem 40px);
 }
 
 [hidden],

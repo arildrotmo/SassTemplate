@@ -85,7 +85,7 @@
 
 @mixin bp($min, $max: NULL) {
   @if unit($min) != 'em' {
-    $min: convertUnit($min, pt);
+    $min: convertUnit($min, em);
   }
   @if($max != NULL) {
     @media (min-width: $min) and (max-width: $max) {
